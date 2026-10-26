@@ -13,9 +13,13 @@ import java.util.Scanner;
 public class PersonalGreeter {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
-        // Your code here
-
+        System.out.print("your name: ");
+        String name = input.nextLine();
+        System.out.print("your age: ");
+        int age = input.nextInt();
+        System.out.print("Favorite subjects: ");
+        String subject = input.next();
         input.close();
+        System.out.println("My name is " + name + ". I am " + age + " years old. My favorite class is " + subject +". I will be 100 in " + (2026 - age + 100));
     }
 }
